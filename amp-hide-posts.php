@@ -3,7 +3,7 @@
 Plugin Name: AMP Hide Bulk Posts
 Description: Hide All the Posts in AMP
 Author: AMPforWP Team
-Version: 1.0
+Version: 1.1
 Author URI: http://ampforwp.com
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
