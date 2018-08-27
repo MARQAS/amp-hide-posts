@@ -33,13 +33,13 @@ ZIP_FILE="https://github.com/ahmedkaludi/amp-woocommerce/archive/0.4-BETA.zip"
 # fi
 
 # Check if the tag exists for the version we are building
-TAG=$(svn ls "https://plugins.svn.wordpress.org/$PLUGIN/tags/$VERSION")
-error=$?
-if [ $error == 0 ]; then
-    # Tag exists, don't deploy
-    echo "Tag already exists for version $VERSION, aborting deployment"
-    exit 1
-fi
+# TAG=$(svn ls "https://plugins.svn.wordpress.org/$PLUGIN/tags/$VERSION")
+# error=$?
+# if [ $error == 0 ]; then
+#     # Tag exists, don't deploy
+#     echo "Tag already exists for version $VERSION, aborting deployment"
+#     exit 1
+# fi
   
 cd "$PLUGIN_BUILDS_PATH"
 # Remove any unzipped dir so we start from scratch
