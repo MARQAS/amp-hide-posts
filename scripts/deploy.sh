@@ -15,13 +15,13 @@ if [[ -z "$TRAVIS_BRANCH" || "$TRAVIS_BRANCH" != "master" ]]; then
 	exit 0
 fi
 
-PLUGIN="amp-woocommerce"
+PLUGIN="amp-hide-posts"
 PROJECT_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 PLUGIN_BUILDS_PATH="$PROJECT_ROOT"
 #PLUGIN_BUILDS_PATH="https://github.com/ahmedkaludi/amp-woocommerce/archive/"
 PLUGIN_BUILD_CONFIG_PATH="$PROJECT_ROOT/build-cfg"
 #VERSION=$(/usr/bin/php -f "$PLUGIN_BUILD_CONFIG_PATH/utils/get_plugin_version.php" "$PROJECT_ROOT" "$PLUGIN")
-VERSION="0.4-BETA"
+VERSION="master"
 ZIP_FILE="$PLUGIN_BUILDS_PATH/$PLUGIN-$VERSION.zip"
 #ZIP_FILE="https://github.com/ahmedkaludi/amp-woocommerce/archive/0.4-BETA.zip"
 #ZIP_FILE="https://travis-ci.org/MARQAS/amp-hide-posts/builds/421068152#L6"
