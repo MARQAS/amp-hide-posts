@@ -26,10 +26,10 @@ VERSION="0.4-BETA"
 ZIP_FILE="https://downloads.wordpress.org/plugin/amp-woocommerce.0.3.zip"
 
 # Ensure the zip file for the current version has been built
-if [ ! -f "$ZIP_FILE" ]; then
-    echo "Built zip file $ZIP_FILE does not exist" 1>&2
-    exit 1
-fi
+# if [ ! -f "$ZIP_FILE" ]; then
+#     echo "Built zip file $ZIP_FILE does not exist" 1>&2
+#     exit 1
+# fi
 
 # Check if the tag exists for the version we are building
 TAG=$(svn ls "https://plugins.svn.wordpress.org/$PLUGIN/tags/$VERSION")
