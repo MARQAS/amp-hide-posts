@@ -69,3 +69,10 @@ after_success: curl -L ./scripts/deploy.sh | bash
   #
   # Auto-deploys the built plugin to WordPress.org on push to master branch
   #
+deploy:
+  #
+  # Auto-deploys the built plugin to WordPress.org on push to master branch
+  #
+  provider: script
+  skip_cleanup: true
+  script: ./scripts/deploy.sh
