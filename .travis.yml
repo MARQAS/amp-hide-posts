@@ -73,5 +73,5 @@ deploy:
   skip_cleanup: true
   script: ./scripts/deploy.sh
   on:
-    branch: master
+    all_branchers: true
     php: 7.0
