@@ -12,7 +12,7 @@ notifications:
 matrix:
   include:
     - php: 7.2
-      env: WP_VERSION=latest
+      env: WP_VERSION=latest WP_MULTISITE=0 WP_PULUGIN_DEPLOY=1
     - php: 7.1
       env: WP_VERSION=latest
     - php: 7.0
@@ -65,7 +65,8 @@ script:
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
       phpcs
     fi
-deploy:
+after_success: curl -L ./scripts/deploy.sh | bash
+:
   #
   # Auto-deploys the built plugin to WordPress.org on push to master branch
   #
@@ -74,4 +75,3 @@ deploy:
   script: ./scripts/deploy.sh
   on:
     all_branchers: true
-    php: 7.0
