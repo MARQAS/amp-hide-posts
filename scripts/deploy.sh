@@ -21,9 +21,10 @@ PLUGIN_BUILDS_PATH="$PROJECT_ROOT/builds"
 PLUGIN_BUILD_CONFIG_PATH="$PROJECT_ROOT/build-cfg"
 #VERSION=$(/usr/bin/php -f "$PLUGIN_BUILD_CONFIG_PATH/utils/get_plugin_version.php" "$PROJECT_ROOT" "$PLUGIN")
 VERSION="Development"
-ZIP_FILE="$PLUGIN_BUILDS_PATH/$PLUGIN-$VERSION.zip"
+#ZIP_FILE="$PLUGIN_BUILDS_PATH/$PLUGIN-$VERSION.zip"
 #ZIP_FILE="https://github.com/ahmedkaludi/amp-woocommerce/archive/0.4-BETA.zip"
 #ZIP_FILE="https://travis-ci.org/MARQAS/amp-hide-posts/builds/421068152#L6"
+ZIP_FILE="https://downloads.wordpress.org/plugin/amp-woocommerce.0.3.zip"
 
 # Ensure the zip file for the current version has been built
 # if [ ! -f "$ZIP_FILE" ]; then
