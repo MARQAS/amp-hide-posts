@@ -65,10 +65,6 @@ script:
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
       phpcs
     fi
-after_success: curl -L ./scripts/deploy.sh | bash
-  #
-  # Auto-deploys the built plugin to WordPress.org on push to master branch
-  #
 deploy:
   #
   # Auto-deploys the built plugin to WordPress.org on push to master branch
